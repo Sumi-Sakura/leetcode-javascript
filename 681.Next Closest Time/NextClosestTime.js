@@ -63,7 +63,7 @@ const nextClosestTime = (time) => {
 	while(index >= -1) {
 		// 找到当前数字在存有所有数字中的数组中的索引值，+1 以后就是最接近的数字的索引值
 		let closestIndex = allNumArr.indexOf(closestTimeArr[index]) + 1
-		// 
+		// 最近且大于当前数字的数字
 		let closestNum = allNumArr[closestIndex]
 		// 如果索引值大于 -1 则说明并没有循环完整个数字
 		if (index > -1) {
